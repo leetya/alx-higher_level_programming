@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "lists.h"
 
-
 /**
  * check_cycle - check if a list is cycle
  * @list: the list
@@ -13,7 +12,7 @@ int check_cycle(listint_t *list)
 {
 	listint_t *hare = list->next->next;
 
-	while (list)
+	while (list && hare->next)
 	{
 		if (!hare)
 			return (0);
