@@ -14,13 +14,13 @@ int check_cycle(listint_t *list)
 
 	if (!list)
 		return (0);
-	hare = list->next->next;
-	while (list && hare)
+	hare = list;
+	while (list && hare && hare->next)
 	{
-		if (list == hare)
-			return (1);
 		list = list->next;
 		hare = hare->next->next;
+		if (list == hare)
+			return (1);
 	}
 	return (0);
 }
