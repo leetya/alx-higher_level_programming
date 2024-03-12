@@ -10,9 +10,12 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *hare = list->next->next;
+	listint_t *hare;
 
-	while (list && hare)
+	if (!list)
+		return (0);
+	hare = list->next->next;
+	while (list)
 	{
 		if (!hare)
 			return (0);
