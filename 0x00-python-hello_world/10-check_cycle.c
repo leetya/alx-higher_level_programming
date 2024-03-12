@@ -12,7 +12,7 @@ int check_cycle(listint_t *list)
 {
 	listint_t *hare = list->next->next;
 
-	while (list && hare->next)
+	while (list && hare)
 	{
 		if (!hare)
 			return (0);
