@@ -15,7 +15,7 @@ int check_cycle(listint_t *list)
 	if (!list)
 		return (0);
 	hare = list->next->next;
-	while (list)
+	while (list && list->next)
 	{
 		if (!hare)
 			return (0);
