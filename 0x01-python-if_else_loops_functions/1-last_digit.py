@@ -8,5 +8,5 @@ if number < 0:
 else:
     last_digit = number % 10
 print(f"Last digit of {number} is {last_digit} and is",
-    "0" if last_digit == 0 else "greater than 5"
-    if last_digit > 5 else "less than 6 and not 0")
+      "0" if last_digit == 0 else "greater than 5"
+      if last_digit > 5 else "less than 6 and not 0")
