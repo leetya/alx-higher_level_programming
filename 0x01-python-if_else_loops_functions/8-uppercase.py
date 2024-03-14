@@ -7,10 +7,12 @@ def islower(c):
 
 
 def uppercase(str):
-    for x in str:
-        if x != str[-1:]:
+    for i, x in enumerate(str):
+        if i != len(str) - 1:
             print("{0}".format(x) if not islower(x)
                   else "{0}".format(chr(ord(x) - 32)), end='')
         else:
             print("{0}".format(str[-1:]) if not islower(str[-1:])
                   else "{0}".format(chr(ord(str[-1:]) - 32))) 
+
+uppercase("")
