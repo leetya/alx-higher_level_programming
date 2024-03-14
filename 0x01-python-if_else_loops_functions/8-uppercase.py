@@ -14,3 +14,5 @@ def uppercase(str):
         else:
             print("{0}".format(str[-1:]) if not islower(str[-1:])
                   else "{0}".format(chr(ord(str[-1:]) - 32))) 
+
+uppercase("holberton")
