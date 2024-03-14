@@ -11,5 +11,4 @@ def uppercase(str):
               else "{0}".format(chr(ord(x) - 32)), end='')
     if str[:-1]:
         print("{0}".format(str[-1:]) if not islower(str[-1:])
-            else "{0}".format(chr(ord(str[-1:]) - 32))) 
-
+              else "{0}".format(chr(ord(str[-1:]) - 32))) 
