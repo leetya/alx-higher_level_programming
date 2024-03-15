@@ -15,4 +15,3 @@ if __name__ == "__main__":
             exit(0)
     print("Unknown operator. Available operators: +, -, * and /")
     exit(1)
-    
