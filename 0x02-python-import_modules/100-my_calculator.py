@@ -11,7 +11,8 @@ if __name__ == "__main__":
     for i, x in enumerate(operators):
         if argv[2] == x:
             print("{} {} {} = {}".format(argv[1], argv[2], argv[3],
-            operate_func[i](int(argv[1]), int(argv[3]))))
+                                         operate_func[i](int(argv[1]),
+                                                         int(argv[3]))))
             exit(0)
     print("Unknown operator. Available operators: +, -, * and /")
     exit(1)
